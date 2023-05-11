@@ -1,0 +1,28 @@
+{
+    "name": "congregation",
+    "version": "1.0.0",
+    "description": "Web page of my father's house congregation, with information about who they are and its content.",
+    "main": "./src/index.js",
+    "scripts": {
+        "build": "webpack --mode production",
+        "dev": "webpack server --mode development",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/core": "^7.21.4",
+        "@babel/plugin-transform-runtime": "^7.21.4",
+        "@babel/preset-env": "^7.21.4",
+        "babel-loader": "^9.1.2",
+        "clean-webpack-plugin": "^4.0.0",
+        "copy-webpack-plugin": "^11.0.0",
+        "css-loader": "^6.7.3",
+        "html-webpack-plugin": "^5.5.1",
+        "mini-css-extract-plugin": "^2.7.5",
+        "webpack": "^5.79.0",
+        "webpack-cli": "^5.0.1",
+        "webpack-dev-server": "^4.13.3"
+    }
+}
