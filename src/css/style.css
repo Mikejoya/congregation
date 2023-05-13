@@ -770,6 +770,7 @@ body {
       gap: 22px;
     } 
     .fundacion-description {
+      align-self: end;
       margin: 30px 0 0;
     }
     .content-politis--img {
