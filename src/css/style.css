@@ -184,7 +184,7 @@ body {
     gap: 22px;
     text-align: left;
     color: #FEFEFD;
-    padding: 26px 0;
+    padding: 0 0 26px;
     margin: 0 auto;
   }
   .container-about--info h3 {
@@ -206,15 +206,16 @@ body {
     align-items: center;
     position: relative;
     margin: 0 0 20px;
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
   }
   
   .container-header--youths h2 {
     height: 24px;
     position: relative;
-    left: 16px;
+    left: 22px;
     top: -1px;
     font-weight: 600;
+    margin-top: 30px;
   }
   .container-header--youths p {
     font-size: 0.7rem;
@@ -554,7 +555,7 @@ body {
   /*seccion contiene todo lo referente a la escuela*/
   .section-content--school {
     width: 86%;
-    margin: 0 auto;
+    margin: 0 auto 30px;
   }
   .content-school {
     width: 100%;
@@ -638,6 +639,29 @@ body {
     width: 100%;
     height: 200px;
   }
+  /*estilos del footer*/
+  footer {
+    height: 10vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 100;
+    padding: 0 20px;
+  }
+  .footer-about {
+    text-align: center;
+  }
+  .footer-about p {
+    margin: 0 0 6px;
+  }
+  .footer-about span {
+    padding-bottom: 6px;
+  }
+  .footer-contact {
+    display: none;
+  }
   @media (min-width: 1024px) {
     .icon-close {
       margin: 4% 3% 0;
@@ -679,6 +703,9 @@ body {
     .text-first--glance{
       width: auto;
     }
+    .container-header--youths h2 {
+      left: 20%;
+    }
     /*seccion nosotros*/
     .container-about--info {
       width: 60%;
@@ -691,6 +718,12 @@ body {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+    }
+    .container-about--info p {
+      margin-bottom: 30px;
+    }
+    .container-about--info span {
+      font-weight: 400;
     }
     /*seccion referente a los jovenes*/
     .container-card--message {
@@ -836,6 +869,13 @@ body {
       justify-content: center;
       gap: 22px;
       padding: 4% 0;
+    }
+    footer {
+      flex-direction: row;
+      font-weight: 400;
+    }
+    .footer-contact {
+      display: block;
     }
 }
 @media (min-width: 1440px) {
